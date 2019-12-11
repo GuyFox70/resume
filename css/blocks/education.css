@@ -1,0 +1,10 @@
+.content__education {
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+}
+
+.education__heading {
+    font-size: 35px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}

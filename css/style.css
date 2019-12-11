@@ -1,0 +1,38 @@
+@import url("core.css");
+@import url("blocks/info.css");
+@import url("blocks/education.css");
+
+#border{
+	padding-bottom: 42px;
+}
+
+#border div.content h1{
+	color: #b43273;
+	padding: 0px 20px;
+	margin: 20px 0px 0px 0px;
+}
+#border div.content p{
+	color: #76214b;
+	text-align: left;
+	padding: 0px 20px;
+}
+#border div.content p.last{
+	padding-bottom: 20px;
+}
+div.fix{
+	display: block;
+	outline: 1px solid #b43273;
+	background: #b43273;
+	width: 100%;
+
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+div.fix p{
+	color: white;
+	font-size: 21px;
+	text-align: center;
+	margin: 0px;
+	padding: 13px 0px 12px 0px;
+}
