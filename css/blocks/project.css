@@ -1,0 +1,32 @@
+.project__slider__leftArrow,
+.project__slider__rightArrow {
+    cursor: pointer;
+}
+
+.project__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__slider__description {
+    display: flex;
+}
+
+.description__about {
+    outline: 1px solid black;
+    flex-grow: 1;
+}
+
+.description__about__list {
+    padding-left: 18px;
+}
+
+.description__img {
+    flex-grow: 1;
+    background: grey;
+}
+
+.description__about__tap {
+    display: flex;
+}

@@ -1,6 +1,16 @@
 .content__education {
+    border-bottom: 3px solid black;
+    overflow: hidden;
+    height: 62px;
+}
+.education__wrap {
     border-top: 3px solid black;
     border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing: border-box;
 }
 
 .education__heading {
@@ -8,3 +18,51 @@
     line-height: 60px;
     letter-spacing: 2px;
 }
+
+.education__svg {
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.education__svg:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    transition: border 0.5s ease;
+}
+
+.education__svg__arrow {
+    display: block;
+    margin-top: 10px;
+}
+
+.education__school,
+.education__college,
+.education__university {
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.education__svg__arrow--up {
+    transform: rotate(180deg);
+    margin-top: 0px;
+}
+
+@keyframes unfold {
+    from {height: 62px;}
+    to {height: 362px}
+}
+
+@keyframes roll {
+    from {height: 362px;}
+    to {height: 62px}
+}
+
+/* .content__education--anim {
+    animation: anim 2s 1 forwards;
+} */
