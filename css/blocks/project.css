@@ -1,3 +1,10 @@
+.project__heading {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    line-height: 70px;
+}
+
 .project__slider__leftArrow,
 .project__slider__rightArrow {
     cursor: pointer;
@@ -7,26 +14,64 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
+    padding: 1%;
+    box-sizing: border-box;
 }
 
 .project__slider__description {
     display: flex;
+    width: 90%;
+    border: 1px solid black;
 }
 
 .description__about {
-    outline: 1px solid black;
-    flex-grow: 1;
+    width: 70%;
+    padding: 3% 0% 3% 3%;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
+.description__about__heading {
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 .description__about__list {
-    padding-left: 18px;
+    margin: 3% 0% 5% 4%;
+}
+
+.description__about__list > li{
+    line-height: 25px;
 }
 
 .description__img {
-    flex-grow: 1;
-    background: grey;
+    width: 30%;
+}
+
+.description__img__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .description__about__tap {
+    width: 50%;
     display: flex;
+    align-items: center;
+    outline: 2px solid grey;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-left: 15%;
+}
+
+.description__about__tap > p {
+    width: 80%;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.description__about__tap > svg {
+    cursor: pointer;
 }
