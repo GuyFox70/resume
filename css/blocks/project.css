@@ -23,6 +23,12 @@
     display: flex;
     width: 90%;
     border: 1px solid black;
+    overflow: hidden;
+}
+
+.description__wrap {
+    width: 100%;
+    display: flex;
 }
 
 .description__about {
