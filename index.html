@@ -12,7 +12,7 @@
                 <div class="content__info info">
 
                     <div class="info__photoWrap">
-                        <img src="img/me.jpg" alt="me">
+                        <img src="img/me.jpg" alt="me" class="info__photoWrap__img">
                     </div>
 
                     <div class="info__data">
@@ -36,12 +36,16 @@
                     <div class="education__wrap">
                         <h1 class="education__heading">Education</h1>
 
-                        <div class="education__svg">
-                            <svg width="40" height="35" class="education__svg__arrow">
-                                <line x1="2" y1="0" x2="21" y2="32" stroke-width="5" stroke="rgb(0,0,0)"/>
-                                <line x1="38" y1="0" x2="19" y2="32" stroke-width="5" stroke="rgb(0,0,0)"/>
-                            </svg>
-                        </div>
+                        <svg width="35" height="35" class="education__svg__arrow">
+                            <line x1="8" y1="8" x2="17.5" y2="27"/>
+                            <line x1="27" y1="8" x2="17.5" y2="27"/>
+                        </svg>
+
+                        <svg width="25" height="25" class="education__svgMobile__arrow">
+                            <line x1="5" y1="5" x2="12.5" y2="20"/>
+                            <line x1="20" y1="5" x2="12.5" y2="20"/>
+                        </svg>
+
                     </div>
 
                     <div class="education__school">
@@ -62,13 +66,13 @@
 
                 <div class="content__project project">
                     <h2 class="project__heading">Projects</h2>
-
+                    <!-- browser -->
                     <div class="project__wrap">
                         <div class="project__slider">
                             <svg width="30" height="30" class="project__slider__leftArrow project__slider__leftArrow--up">
-                                <polygon points="0 15, 29 0, 29 29"/>
+                                <polygon points="1 15, 29 1, 29 29"/>
                             </svg>
-                            <!-- xcjvkxcjvx -->
+
                             <div class="project__slider__description description">
 
                                 <div class="description__wrap">
@@ -94,11 +98,28 @@
                                 </div>
 
                             </div>
-                            <!-- vkjvkldsfjsdklf? -->
+
                             <svg  width="30" height="30" class="project__slider__rightArrow project__slider__rightArrow--up">
                                 <polygon points="1 1, 1 29, 29 15"/>
                             </svg>
                         </div>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="description__mobile mobile">
+                        <div class="mobile__wrap">
+                            <p class="mobile__wrap__sign">show desc</p>
+
+                            <svg width="20" height="20" class="mobile__wrap__svg">
+                                <line x1="5" y1="5" x2="10" y2="17"/>
+                                <line x1="15" y1="5" x2="10" y2="17"/>
+                            </svg>
+                        </div>
+
+                        <a href="#" class="mobile__link">
+                            <img src="img/five.png" alt="five" class="mobile__link__img">
+                        </a>
+
+                        <p class="mobile__see">swipe to see other</p>
                     </div>
                 </div>
 
@@ -110,6 +131,7 @@
         </div>
         
         <script src="js/drop_panel.js"></script>
+        <script src="js/drop_panel_mobile.js"></script>
         <script src="js/slider.js"></script>
 	</body>
 </html>
