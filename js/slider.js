@@ -75,7 +75,6 @@
 
 
 
-
     function creatList(arr) {
         for (let elem of arr) {
             let li = document.createElement('li');
