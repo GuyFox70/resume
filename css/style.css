@@ -2,7 +2,7 @@
 @import url("blocks/info.css");
 @import url("blocks/education.css");
 @import url("blocks/project.css");
-@import url("blocks/swiper.css");
+@import url("blocks/project_mobile.css");
 
 div.fix{
 	display: block;

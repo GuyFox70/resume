@@ -15,8 +15,8 @@
     let counter = 0;
 
     addTextHeading(arr_name_project[counter]);
-    creatList(arr_description[counter]);
-    createLinkImg(arr_link_img[counter], counter);
+    creatList(arr_description[counter], ul);
+    createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
 
     arrow_left.addEventListener('mousedown', () => {
         arrow_left.firstElementChild.classList.remove('project__slider__leftArrow--up');
@@ -36,8 +36,8 @@
         clearElements([description_heading, ul, link]);
             
         addTextHeading(arr_name_project[counter]);
-        creatList(arr_description[counter]);
-        createLinkImg(arr_link_img[counter], counter);
+        creatList(arr_description[counter], ul);
+        createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
                 
     });
 
@@ -61,8 +61,8 @@
         clearElements([description_heading, ul, link]);
             
         addTextHeading(arr_name_project[counter]);
-        creatList(arr_description[counter]);
-        createLinkImg(arr_link_img[counter], counter);
+        creatList(arr_description[counter], ul);
+        createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
                 
     });
 
@@ -71,11 +71,11 @@
 
 
 
-    function creatList(arr) {
+    function creatList(arr, parent) {
         for (let elem of arr) {
             let li = document.createElement('li');
                 li.innerHTML = elem;
-                ul.appendChild(li);
+                parent.appendChild(li);
         }
     }
 
@@ -83,13 +83,13 @@
         description_heading.innerHTML = text;
     }
 
-    function createLinkImg(path, counter) {    
+    function createLinkImg(path, call, parent, elemClass) {    
         let img = document.createElement('img');
             img.src = path;
-            img.alt = arr_name_project[counter];
-            img.className = 'description__link__img';
+            img.alt = call;
+            img.className = elemClass;
     
-        link.appendChild(img);
+        parent.appendChild(img);
     }
 
     function clearElements(arr) {

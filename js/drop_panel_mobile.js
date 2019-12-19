@@ -2,7 +2,7 @@
     let svg = document.querySelector('.education__svgMobile__arrow');
     let education = document.querySelector('.content__education');
     
-    svg.addEventListener('mousedown', () => {
+    svg.addEventListener('touchstart', () => {
  
        if (svg.classList.contains('education__svg__arrow--up')) {
           education.style.cssText = 'animation: rollMobile 2s 1 forwards;';
@@ -11,7 +11,7 @@
        }
     });
  
-    svg.addEventListener('mouseup', () => {
+    svg.addEventListener('touchend', () => {
  
        if (svg.classList.contains('education__svg__arrow--up')) {
           svg.classList.remove('education__svg__arrow--up');

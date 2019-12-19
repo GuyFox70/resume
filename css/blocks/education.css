@@ -107,7 +107,7 @@
         font-size: 15px;
     }
 
-    .education__svg {
+    .education__svg__arrow {
         display: none;
     }
 
@@ -115,15 +115,9 @@
         stroke: rgb(0,0,0);
         stroke-width: 2px;
 
-        border: 1px solid rgba(0, 0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
         cursor: pointer;
         border-radius: 50%;
         display: block;
-    }
-    
-    .education__svgMobile__arrow:hover {
-        border: 1px solid rgba(0, 0, 0, 1);
-        border-radius: 50%;
-        transition: border 0.5s ease;
     }
 }

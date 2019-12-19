@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Resume</title>
-		<meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -109,15 +110,14 @@
                         <div class="mobile__wrap">
                             <p class="mobile__wrap__sign">show desc</p>
 
-                            <svg width="20" height="20" class="mobile__wrap__svg">
-                                <line x1="5" y1="5" x2="10" y2="17"/>
-                                <line x1="15" y1="5" x2="10" y2="17"/>
+                            <svg width="20" height="20" class="mobile__svg mobile__svg--black">
+                                <circle cx="10" cy="10" r="7"/>
                             </svg>
                         </div>
 
-                        <a href="#" class="mobile__link">
-                            <img src="img/five.png" alt="five" class="mobile__link__img">
-                        </a>
+                        <a href="#" class="mobile__link" target="_blank"></a>
+
+                        <ul class="mobile__description elem--hidden"></ul>
 
                         <p class="mobile__see">swipe to see other</p>
                     </div>
@@ -133,5 +133,7 @@
         <script src="js/drop_panel.js"></script>
         <script src="js/drop_panel_mobile.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/show_description.js"></script>
+        <script src="js/swipe.js"></script>
 	</body>
 </html>
