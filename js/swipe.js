@@ -1,11 +1,4 @@
 (function() {
-    let arr_description = [
-                            ['akjdkal', 'ksdfsj', 'dskflkj'],
-                            ['jhfs', 'sa', 'sd']
-                        ];
-    let arr_name_project = ['Five in row (game)', 'lenoma.ru'];
-    let arr_link_img = ['img/five.png', 'img/lenoma.png'];
-    let arr_paths = ['five_in_row/index.html', 'lenoma_project/index.html'];
 
     let ul = document.querySelector('.mobile__description');
     let link = document.querySelector('.mobile__link');
