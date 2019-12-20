@@ -5,18 +5,23 @@
                         ];
     let arr_name_project = ['Five in row (game)', 'lenoma.ru'];
     let arr_link_img = ['img/five.png', 'img/lenoma.png'];
+    let arr_paths = ['five_in_row/index.html', 'lenoma_project/index.html'];
 
     let description_heading = document.querySelector('.description__about__heading');
     let ul = document.querySelector('.description__about__list');
     let link = document.querySelector('.description__link');
+    let img = document.querySelector('.description__link__img');
 
     let arrow_left = document.querySelector('.project__slider__leftArrow');
     let arrow_right = document.querySelector('.project__slider__rightArrow');
     let counter = 0;
 
+    link.href = arr_paths[counter];
+    img.src = arr_link_img[counter];
+    img.alt = arr_name_project[counter];
+
     addTextHeading(arr_name_project[counter]);
     creatList(arr_description[counter], ul);
-    createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
 
     arrow_left.addEventListener('mousedown', () => {
         arrow_left.firstElementChild.classList.remove('project__slider__leftArrow--up');
@@ -33,11 +38,14 @@
             counter = 0;
         }
         
-        clearElements([description_heading, ul, link]);
+        clearElements([description_heading, ul]);
+
+        link.href = arr_paths[counter];
+        img.src = arr_link_img[counter];
+        img.alt = arr_name_project[counter];
             
         addTextHeading(arr_name_project[counter]);
         creatList(arr_description[counter], ul);
-        createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
                 
     });
 
@@ -58,11 +66,14 @@
             counter = arr_link_img.length - 1;
         }
             
-        clearElements([description_heading, ul, link]);
+        clearElements([description_heading, ul]);
+
+        link.href = arr_paths[counter];
+        img.src = arr_link_img[counter];
+        img.alt = arr_name_project[counter];
             
         addTextHeading(arr_name_project[counter]);
         creatList(arr_description[counter], ul);
-        createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'description__link__img');
                 
     });
 
@@ -81,15 +92,6 @@
 
     function addTextHeading(text) {
         description_heading.innerHTML = text;
-    }
-
-    function createLinkImg(path, call, parent, elemClass) {    
-        let img = document.createElement('img');
-            img.src = path;
-            img.alt = call;
-            img.className = elemClass;
-    
-        parent.appendChild(img);
     }
 
     function clearElements(arr) {

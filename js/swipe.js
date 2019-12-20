@@ -5,15 +5,20 @@
                         ];
     let arr_name_project = ['Five in row (game)', 'lenoma.ru'];
     let arr_link_img = ['img/five.png', 'img/lenoma.png'];
+    let arr_paths = ['five_in_row/index.html', 'lenoma_project/index.html'];
 
     let ul = document.querySelector('.mobile__description');
     let link = document.querySelector('.mobile__link');
+    let img = document.querySelector('.mobile__link__img');
 
     let startX, endX, startY, endY;
     let counter = 0;
 
+    link.href = arr_paths[counter];
+    img.src = arr_link_img[counter];
+    img.alt = arr_name_project[counter];
+
     creatList(arr_description[counter], ul);
-    createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'mobile__link__img');
 
     link.addEventListener('touchstart', (event) => {
         startX = event.touches[0].pageX;
@@ -27,7 +32,7 @@
         let resultX = parseInt((startX - endX).toFixed(0));
         let resultY = Math.abs(parseInt((startY - endY).toFixed(0)));
 
-        if (resultY > 40) return;
+        if (resultY > 40 || Math.abs(resultX) < 10) return;
         
         if (resultX < 0) {
             counter++;
@@ -36,10 +41,14 @@
                 counter = 0;
             }
 
-            clearElements([ul, link]);
+            ul.innerHTML = '';
+            
+            link.href = arr_paths[counter];
+            img.src = arr_link_img[counter];
+            img.alt = arr_name_project[counter];
 
             creatList(arr_description[counter], ul);
-            createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'mobile__link__img');
+
         } else {
             counter--;
 
@@ -47,10 +56,14 @@
                 counter = arr_name_project.length - 1;
             }
 
-            clearElements([ul, link]);
+            ul.innerHTML = '';
+
+            link.href = arr_paths[counter];
+            img.src = arr_link_img[counter];
+            img.alt = arr_name_project[counter];
 
             creatList(arr_description[counter], ul);
-            createLinkImg(arr_link_img[counter], arr_name_project[counter], link, 'mobile__link__img');
+
         }
 
 
@@ -62,21 +75,6 @@
             let li = document.createElement('li');
                 li.innerHTML = elem;
                 parent.appendChild(li);
-        }
-    }
-
-    function createLinkImg(path, call, parent, elemClass) {    
-        let img = document.createElement('img');
-            img.src = path;
-            img.alt = call;
-            img.className = elemClass;
-    
-        parent.appendChild(img);
-    }
-
-    function clearElements(arr) {
-        for (let elem of arr) {
-            elem.innerHTML = '';
         }
     }
 })();

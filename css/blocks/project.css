@@ -27,7 +27,7 @@
 
 .project__slider__leftArrow--down,
 .project__slider__rightArrow--down {
-    fill: rgba(0, 89, 0, 1);
+    fill: #cdcbcc;
     stroke: rgba(0, 0, 0, 1);
     stroke-width: 1px;
 }
