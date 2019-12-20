@@ -1,0 +1,26 @@
+.fix{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	background: grey;
+    margin: 10px auto 0 auto;
+}
+
+.fix__email, 
+.fix__phone {
+	color: white;
+	font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.fix__email {
+    display: block;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 485px) {
+    .fix p{
+        font-size: 13px;
+    }
+}

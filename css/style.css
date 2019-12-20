@@ -3,21 +3,4 @@
 @import url("blocks/education.css");
 @import url("blocks/project.css");
 @import url("blocks/project_mobile.css");
-
-div.fix{
-	display: block;
-	outline: 1px solid #b43273;
-	background: #b43273;
-	width: 100%;
-
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-}
-div.fix p{
-	color: white;
-	font-size: 21px;
-	text-align: center;
-	margin: 0px;
-	padding: 13px 0px 12px 0px;
-}
+@import url("blocks/fix.css");
