@@ -1,0 +1,122 @@
+@media screen and (max-width: 775px) {
+    .education__heading {
+        font-size: 30px;
+    }
+
+    .education__school,
+    .education__college,
+    .education__university {
+        font-size: 20px;
+    }
+
+    .info__data__name {
+        font-size: 30px;
+    }
+    
+    .info__data__github {
+        font-size: 30px;
+    }
+
+    .info__data__socialNetworks > a {
+        font-size: 20px;
+    }
+
+    .project__heading {
+        font-size: 30px;
+    }
+
+    .project__slider__description {
+        width: 85%;
+    }
+
+    .description__about__heading {
+        font-size: 20px;
+    }
+
+    .description__about__list > li{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .description__about__tap {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .description__about__tap > p {
+        width: 80%;
+        font-size: 15px;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .content__education {
+        height: 43px;
+    }
+
+    .education__heading {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .education__school,
+    .education__college,
+    .education__university {
+        font-size: 15px;
+    }
+
+    .content__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__photoWrap {
+        width: 50%;
+        margin: auto;
+    }
+
+    .info__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .education__svg {
+        display: none;
+    }
+
+    .education__svg__arrow {
+        display: none;
+    }
+
+    .education__svgMobile__arrow {
+        stroke: rgb(0,0,0);
+        stroke-width: 2px;
+
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 50%;
+        display: block;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .fix p{
+        font-size: 13px;
+    }
+
+    .project__heading {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .project__wrap {
+        display: none;
+    }
+
+    .description__mobile {
+        display: block;
+    }
+}

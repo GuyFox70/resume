@@ -1,4 +1,4 @@
-(function() {
+(() => {
    let svg = document.querySelector('.education__svg__arrow');
    let education = document.querySelector('.content__education');
    

@@ -1,4 +1,4 @@
-(function() {
+(() => {
 
     let ul = document.querySelector('.mobile__description');
     let link = document.querySelector('.mobile__link');

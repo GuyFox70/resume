@@ -18,9 +18,3 @@
     display: block;
     margin-right: 10px;
 }
-
-@media screen and (max-width: 485px) {
-    .fix p{
-        font-size: 13px;
-    }
-}

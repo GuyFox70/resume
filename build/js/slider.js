@@ -1,4 +1,4 @@
-(function () {
+(() => {
     
     let description_heading = document.querySelector('.description__about__heading');
     let ul = document.querySelector('.description__about__list');
