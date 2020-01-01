@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+        <div class="wrap">
+            <div class="content">
+
+                <div class="content__info info">
+
+                    <div class="info__photoWrap">
+                        <img src="img/me.jpg" alt="me" class="info__photoWrap__img">
+                    </div>
+
+                    <div class="info__data">
+                        <p class="info__data__name">Орлов Артем</p>
+
+                        <a href="https://github.com/GuyFox70" class="info__data__github" target="_blank">
+                            Github
+                        </a>
+
+                        <div class="info__data__socialNetworks socialNetworks">
+                            <a href="https://vk.com/audios106321171" target="_blank">VKontakte</a>
+                            <span class="socialNetworks__line"></span>
+                            <a href="https://www.facebook.com/artem.orlov.566" target="_blank">Facebook</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="content__education education content__education--anim">
+                    <div class="education__wrap">
+                        <h1 class="education__heading">Education</h1>
+
+                        <svg width="35" height="35" class="education__svg__arrow">
+                            <line x1="8" y1="8" x2="17.5" y2="27"/>
+                            <line x1="27" y1="8" x2="17.5" y2="27"/>
+                        </svg>
+
+                        <svg width="25" height="25" class="education__svgMobile__arrow">
+                            <line x1="5" y1="5" x2="12.5" y2="20"/>
+                            <line x1="20" y1="5" x2="12.5" y2="20"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="education__school">
+                        <p>1995 - 2004</p>
+                        <p>School №2 (now this school is №10)</p>
+                    </div>
+
+                    <div class="education__college">
+                        <p>2004 - 2008</p>
+                        <p>Orsky machine building college</p>
+                    </div>
+
+                    <div class="education__university">
+                        <p>2015 - 2019</p>
+                        <p>MISIS National University of Science and Technology</p>
+                    </div>
+                </div>
+
+                <div class="content__project project">
+                    <h2 class="project__heading">Projects</h2>
+                    <!-- browser -->
+                    <div class="project__wrap">
+                        <div class="project__slider">
+                            <svg width="30" height="30" class="project__slider__leftArrow project__slider__leftArrow--up">
+                                <polygon points="1 15, 29 1, 29 29"/>
+                            </svg>
+
+                            <div class="project__slider__description description">
+
+                                <div class="description__wrap">
+
+                                    <div class="description__about">
+
+                                        <h3 class="description__about__heading"></h3>
+    
+                                        <ul class="description__about__list"></ul>
+    
+                                        <div class="description__about__tap">
+                                            <p>Tap on image to see the project</p>
+    
+                                            <svg width="30" height="30">
+                                                <line x1="0" y1="0" x2="29" y2="15" stroke="rgb(0,0,0)" stroke-width="2"/>
+                                                <line x1="0" y1="30" x2="29" y2="15" stroke="rgb(0,0,0)" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+    
+                                    <a href="" class="description__link" target="_blank">
+                                        <img src="" alt="" class="description__link__img">
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <svg  width="30" height="30" class="project__slider__rightArrow project__slider__rightArrow--up">
+                                <polygon points="1 1, 1 29, 29 15"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="description__mobile mobile">
+                        <div class="mobile__wrap">
+                            <p class="mobile__wrap__sign">show desc</p>
+
+                            <svg width="20" height="20" class="mobile__svg mobile__svg--black">
+                                <circle cx="10" cy="10" r="7"/>
+                            </svg> 
+                        </div>
+
+                        <a href="" class="mobile__link" target="_blank">
+                            <img src="" alt="" class="mobile__link__img">
+                        </a>
+
+                        <ul class="mobile__description elem--hidden"></ul>
+
+                        <p class="mobile__see">swipe to see other</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fix">
+                <p class="fix__email">Email: artm.orlov.88@list.ru</p>
+                <p class="fix__phone">Phone: 8 (909) 614 50 81</p>
+            </div>
+        </div>
+        
+        <script src="js/arrays.js"></script>
+        <script src="js/drop_panel.js"></script>
+        <script src="js/drop_panel_mobile.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/show_description.js"></script>
+        <script src="js/swipe.js"></script>
+	</body>
+</html>

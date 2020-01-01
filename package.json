@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "resume",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,17 +7,17 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "imagemin-jpeg-recompress": "^6.0.0",
-    "imagemin-optipng": "^7.1.0",
-    "uglify-es": "^3.3.9"
+    "imagemin-optipng": "^7.1.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-imagemin": "^6.2.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-terser": "^1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
