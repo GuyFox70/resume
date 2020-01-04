@@ -1,0 +1,1 @@
+(()=>{const parent=document.querySelector(".project__example"),imgWrap=document.querySelector(".example__imgWrap");parent.addEventListener("click",()=>{parent.classList.contains("anim")?(parent.classList.toggle("anim"),imgWrap.style.cssText="animation: img2 2s 1 forwards;"):(imgWrap.style.cssText="animation: img1 2s 1 forwards;",parent.classList.toggle("anim"))})})();

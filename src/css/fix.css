@@ -1,17 +1,18 @@
 .fix{
+    height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-	background: grey;
+	background: rgb(201, 201, 201);
     margin: 10px auto 0 auto;
 }
 
 .fix__email, 
 .fix__phone {
-	color: white;
+	color: rgb(110, 110, 110);
 	font-size: 18px;
     text-align: center;
-    line-height: 40px;
 }
 
 .fix__email {

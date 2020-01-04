@@ -1,22 +1,28 @@
 (() => {
-   let svg = document.querySelector('.education__svg__arrow');
-   let education = document.querySelector('.content__education');
+   const svg = document.querySelector('.education__svg__arrow');
+   const education = document.querySelector('.content__education');
+   let scroll;
+
+   window.addEventListener('scroll', function() {
+      scroll = pageYOffset;
+    });
    
-   svg.addEventListener('mousedown', () => {
+   svg.addEventListener('click', () => {
 
       if (svg.classList.contains('education__svg__arrow--up')) {
-         education.style.cssText = 'animation: roll 2s 1 forwards;';
+         addAnimation('roll');
+         document.documentElement.scrollTop = scroll;
       } else {
-         education.style.cssText = 'animation: unfold 2s 1 forwards;';
+         addAnimation('unfold');
+         document.documentElement.scrollTop = scroll;
       }
+
    });
 
-   svg.addEventListener('mouseup', () => {
+   function addAnimation(nameAnim) {
 
-      if (svg.classList.contains('education__svg__arrow--up')) {
-         svg.classList.remove('education__svg__arrow--up');
-      } else {
-         svg.classList.add('education__svg__arrow--up');
-      }
-   });
+      education.style.cssText = 'animation:' + ' ' + nameAnim + ' ' + '2s 1 forwards;';
+      svg.classList.toggle('education__svg__arrow--up');
+
+   }
 })();

@@ -8,9 +8,11 @@
 
 .info__data {
     flex-grow: 1;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
 
 .info__data__name {
@@ -24,25 +26,26 @@
     letter-spacing: 5px;
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
+}
+
+.info__data__github:hover,
+.info__data__socialNetworks > a:hover {
+    color: #525252;
+    transition: color .3s ease;
 }
 
 .info__data__socialNetworks {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .info__data__socialNetworks > a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 25px;
     letter-spacing: 5px;
-}
-
-.socialNetworks__line {
-    display: block;
-    border-right: 1px solid black;
-    transform: skewX(-20deg);
-    margin: 0px 10px;
 }

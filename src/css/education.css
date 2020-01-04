@@ -1,12 +1,12 @@
 .content__education {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(97, 97, 97);
     overflow: hidden;
-    height: 62px;
+    height: 37px;
 }
 
 .education__wrap {
-    border-top: 3px solid black;
-    border-bottom: 1px solid black;
+    border-top: 3px solid rgb(97, 97, 97);
+    border-bottom: 1px solid rgb(97, 97, 97);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,23 +15,23 @@
 }
 
 .education__heading {
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 30px;
     letter-spacing: 2px;
 }
 
 .education__svg__arrow {
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 50%;
-
-    stroke: rgb(0,0,0);
+    fill: none;
+    stroke: rgb(223, 223, 223);
     stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .education__svg__arrow:hover {
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 50%;
-    transition: border 0.5s ease;
+    stroke: rgb(182, 182, 182);
+    transition: stroke 0.5s ease;
 }
 
 .education__svgMobile__arrow {
@@ -50,75 +50,14 @@
 
 .education__svg__arrow--up {
     transform: rotate(180deg);
-    margin-top: 0px;
 }
 
 @keyframes unfold {
-    from {height: 62px;}
-    to {height: 362px}
+    from {height: 37px;}
+    to {height: 337px}
 }
 
 @keyframes roll {
-    from {height: 362px;}
-    to {height: 62px}
-}
-
-@keyframes unfoldMobile {
-    from {height: 43px;}
-    to {height: 343px}
-}
-
-@keyframes rollMobile {
-    from {height: 343px;}
-    to {height: 43px}
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 775px) {
-    .education__heading {
-        font-size: 30px;
-    }
-
-    .education__school,
-    .education__college,
-    .education__university {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 485px) {
-    .content__education {
-        height: 43px;
-    }
-
-    .education__heading {
-        font-size: 25px;
-        line-height: 40px;
-    }
-
-    .education__school,
-    .education__college,
-    .education__university {
-        font-size: 15px;
-    }
-
-    .education__svg__arrow {
-        display: none;
-    }
-
-    .education__svgMobile__arrow {
-        stroke: rgb(0,0,0);
-        stroke-width: 2px;
-
-        border: 1px solid rgb(0, 0, 0);
-        cursor: pointer;
-        border-radius: 50%;
-        display: block;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
+    from {height: 337px;}
+    to {height: 37px}
 }

@@ -17,7 +17,10 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-imagemin": "^6.2.0",
-    "gulp-terser": "^1.2.0"
+    "gulp-notify": "^3.2.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "gulp-ttf2woff2": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

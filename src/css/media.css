@@ -1,16 +1,15 @@
-@media screen and (max-width: 775px) {
-    .education__heading {
-        font-size: 30px;
+@media screen and (min-width: 1024px) {
+    .project__link__OnProject:hover {
+        color: rgb(61, 61, 61);
+        transition: color .7s ease;
     }
+}
 
-    .education__school,
-    .education__college,
-    .education__university {
-        font-size: 20px;
-    }
+@media screen and (max-width: 775px) {
 
     .info__data__name {
         font-size: 30px;
+        text-align: center;
     }
     
     .info__data__github {
@@ -21,50 +20,28 @@
         font-size: 20px;
     }
 
-    .project__heading {
-        font-size: 30px;
-    }
-
-    .project__slider__description {
-        width: 85%;
-    }
-
-    .description__about__heading {
-        font-size: 20px;
-    }
-
-    .description__about__list > li{
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    .description__about__tap {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .description__about__tap > p {
-        width: 80%;
-        font-size: 15px;
-        margin-right: 5%;
-    }
-}
-
-@media screen and (max-width: 485px) {
-    .content__education {
-        height: 43px;
-    }
-
     .education__heading {
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 35px;
     }
 
     .education__school,
     .education__college,
     .education__university {
-        font-size: 15px;
+        font-size: 20px;
     }
+
+    .project__heading {
+        font-size: 30px;
+    }
+
+    .project__link_OnProject {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 485px) {
 
     .content__info {
         display: flex;
@@ -84,27 +61,21 @@
         margin: 5% auto;
     }
 
-    .education__svg {
-        display: none;
+    .info__data__name {
+        text-align: center;
     }
 
-    .education__svg__arrow {
-        display: none;
+    .education__heading {
+        font-size: 25px;
     }
 
-    .education__svgMobile__arrow {
-        stroke: rgb(0,0,0);
-        stroke-width: 2px;
-
-        border: 1px solid rgb(0, 0, 0);
-        cursor: pointer;
-        border-radius: 50%;
-        display: block;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    .education__school,
+    .education__college {
+        font-size: 15px;
     }
 
-    .fix p{
-        font-size: 13px;
+    .education__university {
+        font-size: 15px;
     }
 
     .project__heading {
@@ -112,11 +83,12 @@
         line-height: 50px;
     }
 
-    .project__wrap {
-        display: none;
+    .project__link__OnProject {
+        font-size: 22px;
     }
 
-    .description__mobile {
-        display: block;
+    .fix > p{
+        font-size: 13px;
     }
+
 }
